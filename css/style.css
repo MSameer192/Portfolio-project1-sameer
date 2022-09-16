@@ -97,7 +97,7 @@ section {
 }
 .hexagon {
     position: relative;
-    width: 95px;
+    width: 96px;
     height: 50.70px;
     margin: 54.85px auto;
     border-left: solid 2px gray;
@@ -109,27 +109,27 @@ section {
     content: "";
     position: absolute;
     z-index: 1;
-    width: 67.35px;
-    height: 66.35px;
+    width: 67.175px;
+    height: 67.175px;
     -webkit-transform: scaleY(0.5774) rotate(-45deg);
     -ms-transform: scaleY(0.5774) rotate(-45deg);
     transform: scaleY(0.5774) rotate(-45deg);
     background-color: inherit;
-    left: 8.8249px;
+    left: 8.91px;
  }
  .hexagon:before {
-    top: -33.1751px;
+    top: -33.58px;
     border-top: solid 2px gray;
     border-right: solid 2px gray;
     margin-left: 4px;
-    margin-top: 1px;
+    /* margin-top: px; */
  }
  .hexagon:after {
-    bottom: -33.1751px;
+    bottom: -33.58px;
     border-bottom: solid 2px gray;
     border-left: solid 2px gray;
     margin-left: 4px;
-    margin-bottom: 1px;
+    /* margin-bottom: px; */
  }
  *,*:before,*:after {
     box-sizing:border-box;
