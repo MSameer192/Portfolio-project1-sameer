@@ -24,11 +24,13 @@
   <!-- link with font awesoms -->
   <script src="https://kit.fontawesome.com/029c9820bf.js" crossorigin="anonymous"></script>
 
+
   <!-- link with google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,900&display=swap"
+    rel="stylesheet">
 
 </head>
 
@@ -39,10 +41,9 @@
     <!-- Navigation Bar -->
 
     <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container #navbar-container">
-        <a class="navbar-brand  fw-bold" href="#">
-          <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="50" height="30"
-            class="d-inline-block align-text-top pe-2">Apps</a>
+      <div class="container" id="navbar-container">
+        <a class="navbar-brand  fw-bold text-dark" href="#">
+          <img src="./images/logo2.jpg" alt="Logo" class="d-inline-block align-text-top pe-2">Apps</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -82,26 +83,27 @@
       </div>
     </nav>
 
-    <!-- Main Section -->
-
     <main>
-      <section>
+
+      <!-- Main Container -->
+
+      <section id="section-main-container">
         <div class="container p-5">
-          <div class="row" id="section-container">
+          <div class="row">
             <div class="section-heading col-sm-12 col-lg-6 text-white">
-              <p class="main-heading pt-5 mt-5">
+              <p class="main-heading pt-2 mt-5">
                 The Best App in the Universe
               </p>
               <p class="section-text mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. In corporis <br>
                 delectus accusamus ex error quis a minus optio excepturi debitis!
               </p>
-              <button type="button" class="mt-4 btn btn-light btn-lg br-white rounded-pill px-5 section-button">
+              <button type="button" class="mt-4 px-5 section-button">
                 LOAD MORE ITEM
               </button>
             </div>
-            <div class="section-image col-sm-12 col-lg-6 ">
-              <img src="./images/iphone-6s-plus-1534380.svg" alt="mobile-image" class="main-image">
+            <div class="section-image col-sm-12 col-lg-6">
+              <img src="./images/mobile.webp" alt="mobile-image" class="main-image img-fluid">
             </div>
           </div>
         </div>
@@ -109,23 +111,24 @@
 
       <!-- Articles   -->
 
-      <article class="text-center bg-white container" id="services-container">
+      <section class="text-center bg-white container" id="services-container">
         <div class="services-content">
           <p class="services-content-heading">
             Latest News from all categories
           </p>
 
           <p class="services-content-text px-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officiis recusandae fugit nisi est qui unde, totam porro eligendi, quisquam exercitationem odio quidem officia corrupti eius et dolore error id?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officiis recusandae fugit nisi est qui unde,
+            totam porro eligendi, quisquam exercitationem odio quidem officia corrupti eius et dolore error id?
           </p>
         </div>
 
         <div class="services-row row mt-5">
           <div class="first-service col-sm-12 col-md-6 col-lg-4">
             <div class="first-service-icon hexagon bi bi-hexagon ">
-              <i class="icon fa-sharp fa-solid fa-wand-magic-sparkles fa-lg mt-4"></i>
+              <i class="icon fa-sharp fa-solid fa-wand-magic-sparkles fa-lg mt-4 pt-1"></i>
             </div>
-            
+
             <div class="first-service-heading mt-5">
               <p class="service-heading">
                 Maintenance
@@ -134,14 +137,15 @@
 
             <div class="first-service-text">
               <p class="service-text px-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio corrupti ad quis aut obcaecati omnis odio doloremque consequatur eius.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio corrupti ad quis aut obcaecati
+                omnis odio doloremque consequatur eius.
               </p>
             </div>
           </div>
 
           <div class="second-service col-sm-12 col-md-6 col-lg-4">
             <div class="second-service-icon hexagon">
-              <i class="icon fa-sharp fa-solid fa-rocket fa-lg  mt-4"></i>            
+              <i class="icon fa-sharp fa-solid fa-rocket fa-lg  mt-4 pt-1"></i>
             </div>
 
             <div class="second-service-heading mt-5">
@@ -152,14 +156,15 @@
 
             <div class="second-service-text">
               <p class="service-text px-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio corrupti ad quis aut obcaecati omnis odio doloremque consequatur eius.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio corrupti ad quis aut obcaecati
+                omnis odio doloremque consequatur eius.
               </p>
             </div>
           </div>
 
           <div class="third-service col-md-12 col-lg-4">
             <div class="third-service-icon hexagon">
-              <i class="icon fa-solid fa-bug fa-lg mt-4"></i>            
+              <i class="icon fa-solid fa-bug fa-lg mt-4 pt-1"></i>
             </div>
 
             <div class="third-service-heading mt-5">
@@ -170,41 +175,97 @@
 
             <div class="third-service-text">
               <p class="service-text px-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio corrupti ad quis aut obcaecati omnis odio doloremque consequatur eius.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio corrupti ad quis aut obcaecati
+                omnis odio doloremque consequatur eius.
               </p>
             </div>
           </div>
         </div>
 
 
-      </article>
+      </section>
 
-      <article class="container-fluid" id="services-second-container">
-      </article>
+      <section class="container-fluid" id="about-container">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="about-left-container pt-5 col-lg-6 col-md-12">
+              <p class="about-main-heading">
+                We Believe that
+                Interior beautifies the
+                Total Architecture
+              </p>
 
-      <article class="features">
+              <p class="about-para pt-2 pb-4">
+                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards
+                especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond
+                reproach. inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
+                standards especially in the workplace. That’s why it’s crucial that.
+              </p>
 
-      </article>
+              <button class="about-button px-5"> SEE DETAILS</button>
 
-      <article class="video-container">
+            </div>
 
-      </article>
+            <div class="about-right-container col-lg-6 col-md-12">
+              <div class="about-img">
+                <img src="./images/about_img.webp" alt="About-Image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <article class="testimonials">
+      <section class="container" id="features-container">
+        <div class="features-content-container">
+          <p class="features-heading">
+            Some Features that Made us Unique
+          </p>
+          <p class="features-text">
+            Who are in extremely love with eco friendly system.
+          </p>
+        </div>
+        <div class="features-icons-container row">
+          <div class="myfeatures col-lg-4">
+            <img src="" alt="" class="feature-img">
+          </div>
 
-      </article>
+          <p class="feature-name">
 
-      <article class="pricing">
+          </p>
+        </div>  
 
-      </article>
+        <div class="features-icons-container row">
+          <div class="myfeatures col-lg-4">
+            <img src="" alt="" class="feature-img">
+          </div>
 
-      <article class="Q&A">
+          <p class="feature-name">
 
-      </article>
+          </p>
+        </div>  
+        
 
-      <article class="Download App">
+      </section>
 
-      </article>
+      <section class="video-container">
+
+      </section>
+
+      <section class="testimonials">
+
+      </section>
+
+      <section class="pricing">
+
+      </section>
+
+      <section class="Q&A">
+
+      </section>
+
+      <section class="Download App">
+
+      </section>
 
       <footer class="footer">
       </footer>

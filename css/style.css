@@ -1,25 +1,41 @@
-
-body {
-    font-family: 'Roboto', sans-serif;
+.container-fluid {
+    padding: 0;
 }
 
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------Navabr--------------------*/
+
+
+#navbar-container{
+    padding: 0 12%;
+}
+
+#navbar-container a:hover {
+    color: rgba(66,208,255,1);
+}
+
+.text-dark:hover {
+    color: black;
+}
 
 /*--------------------Section Container--------------------*/
 
-section {
-    background-color: #0093E9;
-    background-image: linear-gradient(104deg, #0093E9 48%, #80D0C7 100%);
-    
-}
+#section-main-container {
+    background: rgb(63,168,255);
+    background: linear-gradient(100deg, rgba(63,168,255,1) 0%, rgba(66,208,255,1) 100%);
+    padding: 5% 12%;
 
-#section-container {
-    padding: 10% 12%;
-}
+    }
 
-.main-image {
-    transform: rotate(-30deg);
-    padding: 0px;
 
+main-image {
+
+    width: 100%;
+    height: 100%;
 }
 
 .main-heading {
@@ -32,16 +48,29 @@ section {
     font-weight: 300;
 }
 
+
 .section-button {
     font-size: 1rem;
     font-weight: 500;
-}
+    color: black;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: white;
+  }
+  .section-button:hover {
+    color: white;
+    background-color: rgb(73, 173, 255);
+    background: linear-gradient(100deg, rgba(73, 173, 255,1) 0%, rgb(84, 176, 251) 100%);
+    border: 1px solid white;
+  }
 
 @media only screen and (max-width: 992px) {
-    .main-image {
-        transform: rotate(0);
-        
-    }
     
     #section-container {
         text-align: center;
@@ -50,7 +79,7 @@ section {
     }
 
     .section-image {
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .main-heading {
@@ -59,11 +88,11 @@ section {
 
     .section-button {
         font-size: 0.8rem;
-
+        
     }
 }    
 
-/* ---------------------Pricing Container---------------------  */
+/* ---------------------Service Container---------------------  */
 
 #services-container {
     padding: 5% 6%;
@@ -77,7 +106,7 @@ section {
 }
 
 .services-content-text {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.9rem;
 }
 
@@ -88,7 +117,7 @@ section {
 }
 
 .service-text {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.9rem;
 }
 
@@ -125,17 +154,86 @@ section {
     /* margin-top: px; */
  }
  .hexagon:after {
-    bottom: -33.58px;
+    bottom: -34px;
     border-bottom: solid 2px gray;
     border-left: solid 2px gray;
     margin-left: 4px;
     /* margin-bottom: px; */
  }
+
+ .hexagon:hover {
+    background: rgb(63,168,255);
+    background: linear-gradient(100deg, rgba(63,168,255,1) 0%, rgba(66,208,255,1) 100%);
+ }
+
+ 
  *,*:before,*:after {
     box-sizing:border-box;
  }
 
- #services-second-container {
-    height: 1000px;
-    background-color: lightpink;
+  /* ---------------------About Container---------------------  */
+
+ #about-container {
+    background-color: #f9f9ff;
+    padding: 5% 6%;
+    color: gray;
+
  }
+
+.about-main-heading {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: black;
+    padding-right: 5%;
+}
+
+.about-para {
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding-right: 10%;
+
+}
+
+
+.about-button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: rgb(73, 173, 255);
+    background: linear-gradient(100deg, rgba(73, 173, 255,1) 0%, rgb(84, 176, 251) 100%);
+  }
+  .about-button:hover {
+    color: black;
+    border: 1px solid black;
+    background: white;
+    -webkit-box-shadow: 0px 7px 15px #666666;
+    -moz-box-shadow: 0px 7px 15px #666666;
+    box-shadow: 0px 7px 15px #666666;
+  }
+
+  @media only screen and (max-width: 992px) {
+
+    #about-container {
+        text-align: center;
+    }
+
+    .about-main-heading {
+        padding-right: 0%;
+    }
+
+    .about-para {
+        padding-right: 0%;
+    }
+
+    .about-right-container {
+        padding-top: 40px;
+    }
+  }
