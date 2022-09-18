@@ -11,7 +11,7 @@ body {
 
 
 #navbar-container{
-    padding: 0 12%;
+    padding: 0 6%;
 }
 
 #navbar-container a:hover {
@@ -175,7 +175,7 @@ main-image {
 
  #about-container {
     background-color: #f9f9ff;
-    padding: 5% 6%;
+    padding: 5% 12%;
     color: gray;
 
  }
@@ -207,8 +207,8 @@ main-image {
     outline: none;
     border-radius: 30px;
     border: 1px solid white;
-    background-color: rgb(73, 173, 255);
-    background: linear-gradient(100deg, rgba(73, 173, 255,1) 0%, rgb(84, 176, 251) 100%);
+    background: rgb(63,168,255);
+    background: linear-gradient(100deg, rgba(63,168,255,1) 0%, rgba(66,208,255,1) 100%);
   }
   .about-button:hover {
     color: black;
@@ -241,6 +241,11 @@ main-image {
 
     /* ---------------------Features Container---------------------  */
 
+
+#features-container {
+        padding: 0 6%;
+   
+     }
 
   
 .features-heading {
@@ -367,5 +372,79 @@ main-image {
 
     /* ---------------------features second Container---------------------  */
 
+#pricing-container {
+    background-color: #f9f9ff;
+    padding: 0 12%;
+    color: gray;
+}
 
-features-second-container
+.card-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.card-text {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.card-price {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.card-data {
+    line-height: 0.5rem;
+}
+
+.my-card {
+    border: 1px solid gray;
+    background-color: white;
+}
+.card {
+    padding: 0%;
+    border-radius: 0%;
+}
+
+.card-body {
+    display: flex;
+}
+
+
+.card-button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid black;
+    background: black;
+  }
+  .card-button:hover {
+    color: black;
+    border: 1px solid black;
+    background: white;
+    -webkit-box-shadow: 0px 7px 15px #666666;
+    -moz-box-shadow: 0px 7px 15px #666666;
+    box-shadow: 0px 7px 15px #666666;
+  }
+
+  .card-hover:hover {
+    background: rgb(63,168,255);
+    background: linear-gradient(100deg, rgba(63,168,255,1) 0%, rgba(66,208,255,1) 100%);
+    color: white;
+  }
+
+  .my-card:hover {
+    -webkit-box-shadow: 0px 7px 15px #666666;
+    -moz-box-shadow: 0px 7px 15px #666666;
+    box-shadow: 0px 7px 15px #666666;
+  }
+
+
