@@ -14,6 +14,7 @@ body {
     top: 0px;
     -webkit-box-shadow: 1px 8px 34px 8px rgba(0,0,0,0.64); 
     box-shadow: 1px 8px 34px 8px rgba(0,0,0,0.64);
+    z-index: 9999;
 }
 
 #navbar-container{
@@ -378,6 +379,23 @@ main-image {
 
     /* ---------------------features second Container---------------------  */
 
+    .new-feature-img:hover {
+        background: rgb(63,168,255);
+        background: linear-gradient(100deg, rgba(63,168,255,1) 0%, rgba(66,208,255,1) 100%);
+        opacity: 0.6;
+
+    }
+
+    .second-features-img:hover img{
+        cursor: pointer;
+    }
+
+ 
+
+    /* ---------------------features second Container---------------------  */
+
+
+
 #pricing-container {
     background-color: #f9f9ff;
     padding: 0 12%;
@@ -639,14 +657,18 @@ main-image {
       .Copyright a {
         margin: 5px;
         background-color: #111111;
-        border: 2px solid #111111;
+        /* border: 2px solid #111111; */
         color: white;
-        border-width: 10px;
+        height: 40px;
+        border-width: 40px;
         padding: 2px;
       }
 
       .Copyright a:hover {
         background: rgb(63,168,255);
         background: linear-gradient(100deg, rgba(63,168,255,1) 0%, rgba(66,208,255,1) 100%);
-        border: rgb(63,168,255);;
+        border: 2px solid rgb(63,168,255);
+
       }
+
+      
