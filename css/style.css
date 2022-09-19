@@ -9,6 +9,12 @@ body {
 
 /*--------------------Navabr--------------------*/
 
+.navbar {
+    position: sticky;
+    top: 0px;
+    -webkit-box-shadow: 1px 8px 34px 8px rgba(0,0,0,0.64); 
+    box-shadow: 1px 8px 34px 8px rgba(0,0,0,0.64);
+}
 
 #navbar-container{
     padding: 0 6%;
@@ -95,7 +101,7 @@ main-image {
 /* ---------------------Service Container---------------------  */
 
 #services-container {
-    padding: 5% 6%;
+    padding: 5% 12%;
     color: gray;
 }
 
@@ -294,15 +300,15 @@ main-image {
 
 }
 
-.bg-img {
-    /* background-image: url(/images/excited_img.jpg);
+/* .bg-img {
+    background-image: url(/images/excited_img.jpg);
     height: 69vh;
     background-size: 100%;
-    background-repeat: no-repeat; */
-    /* background-size: contain;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
 
-}    
+}     */
 
 .video-img {
     opacity: 0.6;
@@ -484,3 +490,142 @@ main-image {
     font-size: 1rem;
     font-weight: 300;
 }
+
+
+
+  /* ----------------------- Download App Cotainer   ----------------------- */
+
+
+
+ #Download-App {
+    background: rgb(63,168,255);
+    background: linear-gradient(100deg, rgba(63,168,255,1) 0%, rgba(66,208,255,1) 100%);
+    padding: 0 12%;
+}
+
+
+.download-button {
+    background: white;
+    text-decoration: none;
+    width: 240px;
+    padding: 10px 30px 05px;
+    margin: 20px;
+    color:  rgba(66,208,255,1);
+  }
+  
+  .download-button:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    transition: all 0.3s ease;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .available {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .button-text {
+    font-size: 0.9rem;
+    color: black;
+  }
+
+  .available:hover {
+    color: white;
+  }
+
+  .button-text:hover {
+    color: white  
+}
+
+
+  /* ----------------------- Footer Cotainer   ----------------------- */
+
+
+  #footer {
+    background: #222222;
+    padding: 0 12%;
+    color: white;
+}
+
+    ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
+
+    li img {
+        margin: 5px;
+    }
+
+    .list-heading {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .list-text {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .list-text:hover {
+        color: rgba(66,208,255,1);
+    }
+    
+    input {
+        border-radius: 20px;
+        height: 40px;
+        border: none;
+        width: 350px;
+    }
+
+
+    .css-button-arrow--rose {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        overflow: hidden;
+        border-radius: 20px;
+        border: none;
+        background: rgb(63,168,255);
+        background: linear-gradient(100deg, rgba(63,168,255,1) 0%, rgba(66,208,255,1) 100%);
+        font-size: 0.9rem;
+    }
+
+    .submit {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    
+      .css-button-arrow--rose:hover {
+        border-radius: 20px;
+        padding-right: 24px;
+        padding-left:8px;
+      }
+      .css-button-arrow--rose:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+      .css-button-arrow--rose:after {
+        content: "\00BB";
+        position: absolute;
+        opacity: 0;
+        font-size: 20px;
+        line-height: 40px;
+        top: 0;
+        right: -20px;
+        transition: 0.4s;
+      }
