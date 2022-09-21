@@ -36,8 +36,10 @@ body {
   position: sticky;
   top: 0px;
   z-index: 9999;
-  -webkit-box-shadow: 1px 8px 34px 8px rgba(0, 0, 0, 0.64);
-  box-shadow: 1px 8px 34px 8px rgba(0, 0, 0, 0.64);
+  /* -webkit-box-shadow: 1px 1px 34px 8px rgba(0, 0, 0, 0.64);
+  box-shadow: 1px 1px 34px 8px rgba(0, 0, 0, 0.64); */
+  -webkit-box-shadow: 0px 2px 16px 6px rgba(0,0,0,0.63); 
+  box-shadow: 0px 2px 16px 6px rgba(0,0,0,0.63);
 }
 
 #navbar-container {
@@ -146,8 +148,10 @@ body {
 }
 
 .icon {
-  color: gray;
+    color: rgb(107, 105, 105);
 }
+
+
 
 @media only screen and (max-width: 768px) {
   #services-container {
@@ -179,7 +183,6 @@ body {
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
   left: 8.91px;
 }
 
@@ -189,6 +192,8 @@ body {
   border-right: solid 2px gray;
   margin-left: 4px;
   /* margin-top: px; */
+  z-index: 0;
+    
 }
 
 .hexagon:after {
@@ -197,16 +202,62 @@ body {
   border-left: solid 2px gray;
   margin-left: 4px;
   /* margin-bottom: px; */
+  color: white;
+  z-index: 0;
+
 }
 
-.hexagon:hover {
+/* .hexagon:hover {
   background: rgb(63, 168, 255);
   background: linear-gradient(
     100deg,
     rgba(63, 168, 255, 1) 0%,
     rgba(66, 208, 255, 1) 100%
   );
+  color: white;
+
+} */
+
+/* .hexagon:hover::before {
+    content: "";
+  position: absolute;
+  z-index: -1;
+  width: 67.175px;
+  height: 67.175px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+    left: 8.91px;
+    background: rgb(63, 168, 255);
+    background: linear-gradient(
+      100deg,
+      rgba(63, 168, 255, 1) 0%,
+      rgba(66, 208, 255, 1) 100%
+    );
+    color: pink;
 }
+
+.hexagon:hover::after {
+    content: "";
+  position: absolute;
+  z-index: -1;
+  width: 67.175px;
+  height: 67.175px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  left: 8.91px;
+  background-color: transparent;
+    background: rgb(63, 168, 255);
+    background: linear-gradient(
+      100deg,
+      rgba(63, 168, 255, 1) 0%,
+      rgba(66, 208, 255, 1) 100%
+    );
+    color: pink;
+} */
+
+
 
 *,
 *:before,
