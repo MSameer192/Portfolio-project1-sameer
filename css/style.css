@@ -759,6 +759,8 @@ a {
   .between-flax li {
     justify-content: space-between;
     overflow: hidden;
+    width: 25%;
+
   }
 }
 
