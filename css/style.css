@@ -31,8 +31,6 @@ body {
 
 /*--------------------Navabr--------------------*/
 
-#navbar-container {
-}
 
 .navbar {
   position: sticky;
@@ -40,11 +38,10 @@ body {
   z-index: 9999;
   -webkit-box-shadow: 1px 8px 34px 8px rgba(0, 0, 0, 0.64);
   box-shadow: 1px 8px 34px 8px rgba(0, 0, 0, 0.64);
-  max-width: 100vw;
 }
 
 #navbar-container {
-  padding: 0 12%;
+  padding: 0 3%;
 }
 
 #navbar-container a:hover {
@@ -118,6 +115,7 @@ body {
     margin-top: 40px;
   }
 }
+
 
 @media only screen and (max-width: 768px) {
   .section-image {
@@ -705,7 +703,37 @@ a {
 
 /* ----------------------- Footer Cotainer   ----------------------- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 992px) {
+
+  
+    .footer-main-container {
+      padding: 0% 4% !important;
+    }
+   
+    .css-button-arrow--rose {
+      margin-top: 20px;
+      margin-left: 12px;
+    }
+  
+    .input-buttons {
+      padding: 0 !important;
+    }
+  
+    .insta-heading {
+      margin: 20px 0px;
+    }
+  
+    .between-flax li {
+      justify-content:space-between;
+      overflow: hidden;
+    }
+  
+
+  }
+
+
+
+@media only screen and (max-width: 992px) {
   #footer {
     padding: 12% 0% !important;
   }
@@ -714,7 +742,7 @@ a {
     padding: 0% 4% !important;
   }
   input {
-    width: 60% !important;
+    width: 80% !important;
   }
 
   .css-button-arrow--rose {
@@ -741,7 +769,13 @@ a {
   .icon-container {
     text-align: left!important;
   }
+
+  .news-letter{
+    margin-top: 40px;
+  }
 }
+
+
 
 #footer {
   background: #222222;
