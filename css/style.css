@@ -1,7 +1,7 @@
 /*--------------------for remove spacing--------------------*/
 
 @media only screen and (max-width: 410px) {
-  #master-container {
+  body {
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -31,15 +31,14 @@ body {
 
 /*--------------------Navabr--------------------*/
 
-
 .navbar {
   position: sticky;
   top: 0px;
   z-index: 9999;
   /* -webkit-box-shadow: 1px 1px 34px 8px rgba(0, 0, 0, 0.64);
   box-shadow: 1px 1px 34px 8px rgba(0, 0, 0, 0.64); */
-  -webkit-box-shadow: 0px 2px 16px 6px rgba(0,0,0,0.63); 
-  box-shadow: 0px 2px 16px 6px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 0px 2px 16px 6px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 2px 16px 6px rgba(0, 0, 0, 0.63);
 }
 
 #navbar-container {
@@ -110,14 +109,13 @@ body {
 @media only screen and (max-width: 992px) {
   #section-main-container {
     text-align: center;
-    padding: 0%!important;
+    padding: 0% !important;
   }
 
   .section-image {
     margin-top: 40px;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .section-image {
@@ -148,14 +146,12 @@ body {
 }
 
 .icon {
-    color: rgb(107, 105, 105);
+  color: rgb(107, 105, 105);
 }
 
 .icon:hover {
-    color: white;
+  color: white;
 }
-
-
 
 @media only screen and (max-width: 768px) {
   #services-container {
@@ -197,7 +193,6 @@ body {
   margin-left: 4px;
   /* margin-top: px; */
   z-index: 0;
-    
 }
 
 .hexagon:after {
@@ -208,7 +203,6 @@ body {
   /* margin-bottom: px; */
   color: white;
   z-index: 0;
-
 }
 
 .hexagon:hover {
@@ -219,11 +213,10 @@ body {
     rgba(66, 208, 255, 1) 100%
   );
   color: white;
-
 }
 
 .hexagon:hover::before {
-    content: "";
+  content: "";
   position: absolute;
   z-index: -1;
   width: 67.175px;
@@ -231,18 +224,18 @@ body {
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
-    left: 8.91px;
-    background: rgb(63, 168, 255);
-    background: linear-gradient(
-      100deg,
-      rgba(63, 168, 255, 1) 0%,
-      rgba(66, 208, 255, 1) 100%
-    );
-    color: pink;
+  left: 8.91px;
+  background: rgb(63, 168, 255);
+  background: linear-gradient(
+    100deg,
+    rgba(63, 168, 255, 1) 0%,
+    rgba(66, 208, 255, 1) 100%
+  );
+  color: pink;
 }
 
 .hexagon:hover::after {
-    content: "";
+  content: "";
   position: absolute;
   z-index: -1;
   width: 67.175px;
@@ -252,16 +245,14 @@ body {
   transform: scaleY(0.5774) rotate(-45deg);
   left: 8.91px;
   background-color: transparent;
-    background: rgb(63, 168, 255);
-    background: linear-gradient(
-      100deg,
-      rgba(63, 168, 255, 1) 0%,
-      rgba(66, 208, 255, 1) 100%
-    );
-    color: pink;
+  background: rgb(63, 168, 255);
+  background: linear-gradient(
+    100deg,
+    rgba(63, 168, 255, 1) 0%,
+    rgba(66, 208, 255, 1) 100%
+  );
+  color: pink;
 }
-
-
 
 *,
 *:before,
@@ -759,34 +750,28 @@ a {
 /* ----------------------- Footer Cotainer   ----------------------- */
 
 @media only screen and (min-width: 992px) {
-
-  
-    .footer-main-container {
-      padding: 0% 4% !important;
-    }
-   
-    .css-button-arrow--rose {
-      margin-top: 20px;
-      margin-left: 12px;
-    }
-  
-    .input-buttons {
-      padding: 0 !important;
-    }
-  
-    .insta-heading {
-      margin: 20px 0px;
-    }
-  
-    .between-flax li {
-      justify-content:space-between;
-      overflow: hidden;
-    }
-  
-
+  .footer-main-container {
+    padding: 0% 4% !important;
   }
 
+  .css-button-arrow--rose {
+    margin-top: 20px;
+    margin-left: 12px;
+  }
 
+  .input-buttons {
+    padding: 0 !important;
+  }
+
+  .insta-heading {
+    margin: 20px 0px;
+  }
+
+  .between-flax li {
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
 
 @media only screen and (max-width: 992px) {
   #footer {
@@ -816,21 +801,19 @@ a {
   }
 
   .between-flax li {
-    justify-content:space-between;
+    justify-content: space-between;
     overflow: hidden;
     width: 25%;
   }
 
   .icon-container {
-    text-align: left!important;
+    text-align: left !important;
   }
 
-  .news-letter{
+  .news-letter {
     margin-top: 40px;
   }
 }
-
-
 
 #footer {
   background: #222222;
@@ -942,5 +925,5 @@ input[placeholder] {
 }
 
 .color {
-    color:  rgb(63, 168, 255);
+  color: rgb(63, 168, 255);
 }
