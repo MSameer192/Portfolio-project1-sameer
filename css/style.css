@@ -151,6 +151,10 @@ body {
     color: rgb(107, 105, 105);
 }
 
+.icon:hover {
+    color: white;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -207,7 +211,7 @@ body {
 
 }
 
-/* .hexagon:hover {
+.hexagon:hover {
   background: rgb(63, 168, 255);
   background: linear-gradient(
     100deg,
@@ -216,9 +220,9 @@ body {
   );
   color: white;
 
-} */
+}
 
-/* .hexagon:hover::before {
+.hexagon:hover::before {
     content: "";
   position: absolute;
   z-index: -1;
@@ -255,7 +259,7 @@ body {
       rgba(66, 208, 255, 1) 100%
     );
     color: pink;
-} */
+}
 
 
 
