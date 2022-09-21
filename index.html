@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
   <title>Sameer || Capstone-Project</title>
 
-  
+
 
   <!-- link favicon -->
 
@@ -22,6 +22,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
+
+
 
   <!-- link with css -->
   <link rel="stylesheet" href="./css/style.css">
@@ -44,14 +46,14 @@
 </head>
 
 
-<body onload="load()" >
+<body onload="load()">
   <div class="container-fluid" id="master-container">
 
     <!--------------------- Navigation Bar----------------------->
 
     <nav class="navbar navbar-expand-lg bg-white" id="navbar-main-container">
-      
-        <div class="container scroller" id="navbar-container">
+
+      <div class="container scroller" id="navbar-container">
         <a class="navbar-brand  fw-bold text-dark" href="#">
           <img src="./images/logo2.jpg" alt="Logo" class="d-inline-block align-text-top pe-2">Apps</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -90,7 +92,7 @@
               </ul>
             </li>
         </div>
-        </div>
+      </div>
     </nav>
 
     <main>
@@ -125,11 +127,12 @@
       <section class="text-center bg-white container-fluid" id="services-container">
         <div class="container">
           <div class="services-content">
-            <p class="sub-heading"> <!-- services-content-heading  services-content-text -->
+            <p class="sub-heading">
+              <!-- services-content-heading  services-content-text -->
               Latest News from all categories
             </p>
 
-            <p class="sub-heading-text service-text-margin px-5 mx-5"> 
+            <p class="sub-heading-text service-text-margin px-5 mx-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officiis recusandae fugit nisi est qui
               unde,
               totam porro eligendi, qu et dolore error id?
@@ -171,7 +174,7 @@
 
               <div class="second-service-text">
                 <p class="sub-heading-text service-text-margin px-5">
-                  Lorem ipsum dolor  elit. Veritatis optio corrupti ad quis aut
+                  Lorem ipsum dolor elit. Veritatis optio corrupti ad quis aut
                   obcaecati
                   omnis odio doloremque consequatur eius.
                 </p>
@@ -315,6 +318,8 @@
 
 
       <section class="container pt-5 text-center" id="features-second-container">
+
+
         <div class="features-content-container mt-5">
           <p class="sub-heading">
             Some Features that Made us Unique
@@ -324,15 +329,18 @@
           </p>
         </div>
 
-        <div class="row mt-5">
-          <div class="second-features-img col-lg-4 col-md-6">
-            <img src="./images/kabalishow.webp" alt="kabalishow" class="new-feature-img img-fluid">
-          </div>
-          <div class="second-features-img col-lg-4 col-md-6"> 
-            <img src="./images/smokeshow.webp" alt="smokeshow" class="new-feature-img img-fluid">
-          </div>
-          <div class="second-features-img col-lg-4">
-            <img src="./images/yokeparty.webp" alt="" class="new-feature-img img-fluid">
+          <div class="row mt-5">
+
+            <div class="second-features-img col-lg-4" >
+              <img src="./images/kabalishow.webp" alt="kabalishow" class="new-feature-img img-fluid">
+            </div>
+            <div class="second-features-img col-lg-4">
+              <img src="./images/smokeshow.webp" alt="smokeshow" class="new-feature-img img-fluid">
+            </div>
+            <div class="second-features-img col-lg-4">
+              <img src="./images/yokeparty.webp" alt="" class="new-feature-img img-fluid">
+            </div>        
+
           </div>
         </div>
 
@@ -487,7 +495,7 @@
                     0
                   </p>
                   <p class="numbers-text">
-                    Projects Completed
+                    New Projects
                   </p>
                 </div>
 
@@ -496,7 +504,7 @@
                     0
                   </p>
                   <p class="numbers-text">
-                    New Projects
+                    Tickets Submitted
                   </p>
 
                 </div>
@@ -662,7 +670,7 @@
           </div>
 
 
-          
+
           <div class="row container mt-5 py-5">
             <div class=" col-md-8 Copyright pb-5">
               Copyright ©2022 All rights reserved | This website is made <span class="color">&#9825;</span> by
@@ -692,47 +700,69 @@
 
 
   <script>
-    function animate(obj, initVal, lastVal, duration) {
-       let startTime = null;
 
-    //get the current timestamp and assign it to the currentTime variable
-    let currentTime = Date.now();
-
-    //pass the current timestamp to the step function
-    const step = (currentTime ) => {
-
-    //if the start time is null, assign the current time to startTime
-    if (!startTime) {
-       startTime = currentTime ;
+$('.multi-item-carousel').carousel({
+    interval: false
+  });
+  
+  // for every slide in carousel, copy the next slide's item in the slide.
+  // Do the same for the next, next item.
+  $('.multi-item-carousel .item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
     }
-
-    //calculate the value to be used in calculating the number to be displayed
-    const progress = Math.min((currentTime - startTime)/ duration, 1);
-
-    //calculate what to be displayed using the value gotten above
-    obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
-
-    //checking to make sure the counter does not exceed the last value (lastVal)
-    if (progress < 1) {
-       window.requestAnimationFrame(step);
+    next.children(':first-child').clone().appendTo($(this));
+    
+    if (next.next().length>0) {
+      next.next().children(':first-child').clone().appendTo($(this));
     } else {
+        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+    }
+  });
+
+
+    function animate(obj, initVal, lastVal, duration) {
+      let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime) => {
+
+        //if the start time is null, assign the current time to startTime
+        if (!startTime) {
+          startTime = currentTime;
+        }
+
+        //calculate the value to be used in calculating the number to be displayed
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        //calculate what to be displayed using the value gotten above
+        obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+        //checking to make sure the counter does not exceed the last value (lastVal)
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
           window.cancelAnimationFrame(window.requestAnimationFrame(step));
-       }
-    };
-    //start animating
-       window.requestAnimationFrame(step);
+        }
+      };
+      //start animating
+      window.requestAnimationFrame(step);
     }
     let text1 = document.getElementById('0101');
     let text2 = document.getElementById('0102');
     let text3 = document.getElementById('0103');
     let text4 = document.getElementById('0104');
     const load = () => {
-       animate(text1, 0, 10680, 7000);
-       animate(text2, 0, 6508, 7000);
-       animate(text3, 0, 3599, 7000);
-       animate(text4, 0, 999, 7000);
+      animate(text1, 0, 10680, 7000);
+      animate(text2, 0, 6508, 7000);
+      animate(text3, 0, 3599, 7000);
+      animate(text4, 0, 999, 7000);
     }
- </script>
+  </script>
 </body>
 
 </html>
