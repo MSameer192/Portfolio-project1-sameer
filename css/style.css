@@ -627,8 +627,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  #ques-ans-container {
-  }
 
   .QA-left-container,
   .QA-right-container {
