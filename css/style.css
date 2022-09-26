@@ -487,6 +487,52 @@ body {
 
 }
 
+@media only screen and (max-width: 991.98px) {
+  .my-padding {
+    padding: 0%!important;
+  }
+
+  .item img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+    .my-padding {
+      padding: 8%!important;
+    }  
+  }
+
+    @media only screen and (max-width: 460px) {
+      .my-padding {
+        padding: 1%!important;
+        
+      }
+}
+
+
+.owl-carousel .item {
+  margin: 3px;
+}
+.owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-carousel .item {
+  margin: 3px;
+}
+
+.owl-carousel {
+  margin-bottom: 15px;
+}
+
+.my-padding {
+  padding: 0 6%;
+}
+
 /* ---------------------Pricing Container---------------------  */
 
 @media only screen and (max-width: 768px) {
@@ -627,8 +673,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  #ques-ans-container {
-  }
+
 
   .QA-left-container,
   .QA-right-container {
