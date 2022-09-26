@@ -316,6 +316,12 @@ body {
 
 /* ---------------------Features Container---------------------  */
 
+@media only screen and (min-width: 992px) {
+  #features-container {
+    padding: 0% !important;
+  }
+}
+
 #features-container {
   padding: 0 8%;
 }
@@ -345,7 +351,6 @@ body {
   color: white;
   border: none;
     transition: all 0.3s ease;
-
 }
 
 /* ---------------------Video Container---------------------  */
@@ -673,7 +678,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7e14e72e9f8ba838ee883c869ec8f5717ec6d668
 
   .QA-left-container,
   .QA-right-container {
