@@ -41,9 +41,9 @@ body {
   box-shadow: 0px 2px 16px 6px rgba(0, 0, 0, 0.63);
 }
 
-#navbar-container {
+/* #navbar-container {
   padding: 0 3%;
-}
+} */
 
 #navbar-container a:hover {
   color: rgba(66, 208, 255, 1);
@@ -157,7 +157,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   #services-container {
-    padding: 5% 0%;
+    padding: 5% 0%!important;
   }
 
   .service-text-margin {
@@ -316,14 +316,14 @@ body {
 
 /* ---------------------Features Container---------------------  */
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
   #features-container {
-    padding: 0% !important;
+    padding: 5% 0% !important;
   }
-}
+} */
 
 #features-container {
-  padding: 0 8%;
+  padding: 5% 1%;
 }
 
 .myfeatures {
@@ -556,7 +556,7 @@ body {
 
 @media only screen and (max-width: 992px) {
   #pricing-container {
-    padding: 20% 0% !important;
+    padding: 10% 0% !important;
     /* max-width: 350px; */
   }
 
@@ -570,9 +570,9 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  #pricing-container {
+  /* #pricing-container {
     padding: 5% 0% !important;
-  }
+  } */
 
   .card-data {
     line-height: 1rem !important;
@@ -670,8 +670,9 @@ body {
 
 @media only screen and (max-width: 992px) {
   #ques-ans-container {
-    padding: 10% 0% !important;
+    padding: 5% 0% !important;
   }
+
   .QA-left-container {
     margin-top: 60px;
   }
@@ -698,7 +699,7 @@ body {
 }
 
 #ques-ans-container {
-  padding: 0 12%;
+  padding: 5% 12%;
   color: gray;
 }
 
