@@ -151,9 +151,7 @@ body {
   color: rgb(107, 105, 105);
 }
 
-.icon:hover {
-  color: white;
-}
+
 
 @media only screen and (max-width: 768px) {
   #services-container {
@@ -168,7 +166,7 @@ body {
 
 .hexagon {
   position: relative;
-  width: 96px;
+  width: 95.9px;
   height: 50.7px;
   margin: 54.85px auto;
   border-left: solid 2px gray;
@@ -193,41 +191,17 @@ body {
   border-top: solid 2px gray;
   border-right: solid 2px gray;
   margin-left: 4px;
-  /* margin-top: px; */
   z-index: 0;
   
 }
 
 .hexagon:after {
-  bottom: -34px;
+  bottom: -33.58px;
   border-bottom: solid 2px gray;
   border-left: solid 2px gray;
   margin-left: 4px;
-  /* margin-bottom: px; */
   color: white;
   z-index: 0;
-}
-
-.hexagon:hover {
-  background: rgb(63, 168, 255);
-  background: linear-gradient(
-    100deg,
-    rgba(63, 168, 255, 1) 0%,
-    rgba(66, 208, 255, 1) 100%
-  );
-  color: white;
-  transition: all 0.3s ease;
-
-}
-
-.hexagon:hover::before {
-  z-index: -1;
-  transition: all 0.3s ease;
-}
-
-.hexagon:hover::after {
-  z-index: -1;
-  transition: all 0.3s ease;
 }
 
 *,
@@ -542,15 +516,34 @@ body {
 
 @media only screen and (max-width: 768px) {
   #pricing-container {
-    padding: 20% 0% !important;
+    padding: 0% 0% !important;
+    text-align: center;
+  }
+
+  .card-body {
+    padding-left: 10% !important; 
+    /* padding-right: 0% !important;  */
+    /* display: flex;
+    justify-content: center; */
+    text-align: left;
+
   }
 
   .card-data {
     line-height: 1rem !important;
+    padding-right: 10% !important;
   }
 
   .card-border {
     margin-top: 30px;
+  }
+
+  .card-more-detail, .card-text {
+    padding: 0% !important;
+  }
+
+  .card-button {
+    margin: 5% 0% !important;
   }
 }
 
