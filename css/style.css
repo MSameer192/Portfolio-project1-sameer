@@ -748,13 +748,14 @@ body {
   color: rgba(66, 208, 255, 1);
 }
 
-.download-button:hover {
+.download-button:hover  {
   background: #3cb0fd;
   text-decoration: none;
   border: 1px solid white;
   color: white;
   transition: all 0.3s ease;
 }
+
 
 a {
   text-decoration: none;
@@ -775,9 +776,11 @@ a {
   color: white;
 }
 
-.button-text:hover {
+.button-text:hover, .button-donload-text {
   color: white;
 }
+
+
 
 /* ----------------------- Footer Cotainer   ----------------------- */
 
